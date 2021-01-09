@@ -13,7 +13,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 
-dataframe = pd.read_csv("/Users/zq314159/Desktop/ML/dataset/regression/salary.csv")
+#input salary.csv file
+dataframe = pd.read_csv(".../salary.csv")                                
 train_set,test_set = train_test_split(dataframe,test_size=0.6,random_state=42)
 train_set.plot.scatter(x='YearsExperience',y='Salary')
 
